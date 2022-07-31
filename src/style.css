@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.wrapper-center {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.wrapper-btn-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.registration-forms {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 150px;
+}
+
+.registration-forms form {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form-title {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.registration-form-input {
+    margin-bottom: 10px;
+    padding: 5px;
+    color: black;
+}
+
+.registration-form-btn {
+    align-self: center;
+    background: #FFA500;
+    border-radius: 10px;
+    border: none;
+    width: 150px;
+    height: 20px;
+
+}
+
+.registration-form-about {
+    align-self: center;
+}
+
+.registration-form-name {
+    color: #FFA500;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.load {
+    width: 30px;
+    height: 30px;
+    align-self: center;
+    display: none;
+}
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: 1px solid #FFA500;
+
+}
+
+.btn-add, .btn-logout {
+    background: #FFA500;
+    border-radius: 20%;
+    border: none;
+    width: 50px;
+    height: 40px;
+    margin: 20px 0;
+
+}
+
+.add-task-form {
+    display: none;
+    flex-direction: column;
+
+    width: 500px;
+
+}
+
+.new-task {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #FFA500;
+    color: grey;
+}
+
+.btn-add-task, .close-form {
+    background: #FFA500;
+    border-radius: 20%;
+    border: none;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+    margin-left: 10px;
+
+}
+
+.error-message {
+    display: none;
+    align-content: flex-start;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    color: red;
+}
+
+.error .error-message {
+    display: inline-block;
+}
+
+.error input, .error textarea {
+    border: 1px solid red;
+}
+
+.open-form {
+    display: flex;
+}
+
+.add-task-form-btn {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+
+.load-form {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.select-new-task {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #FFA500;
+    color: grey;
+}
+
+
+.main {
+    padding: 20px 0;
+}
+
+.completed {
+    color: #FFA500;
+}
+
+.main-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.select-task {
+    background-color: #FFA500;
+    border-radius: 5px;
+    padding: 3px;
+
+}
+
+.count-tasks {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.priority {
+    align-self: flex-start;
+    margin-bottom: 30px;
+    color: #FF4500;
+}
+
+.tasks-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #FFA500;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-top: 10px;
+
+}
+
+.wrapper-priority-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tasks-list span {
+    font-size: 15px;
+}
+
+.status {
+    margin: 0 20px 40px 10px;
+}
+
+.tasks-list li h2, .tasks-list li p {
+    color: #FF8C00;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.wrapper-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.wrapper-btn button {
+    margin: 10px;
+    background: #FFA500;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+}
+
+.tasks-list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+ul .tasks-list-ready {
+    background-color: #FFA500;
+    border: 1px solid #ffffff;
+
+}
+
+li.tasks-list-ready h2, li.tasks-list-ready p, li.tasks-list-ready .priority {
+    color: #ffffff;
+}
+
+.tasks-list-ready .wrapper-btn button {
+    background: #ffffff;
+    color: #FFA500;
+}
+
+.tasks-list-ready .btn-edit-form {
+    background: #ffffff;
+    color: #FFA500;
+}
+
+
+.edit-form {
+    min-width: 300px;
+    display: none;
+    flex-direction: column;
+
+}
+
+.edit-name, .edit-text, .select-edit-task {
+    margin-bottom: 10px;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #FFA500;
+    border-radius: 5px;
+    color: #FF4500;
+
+}
+
+.btn-edit-form {
+    align-self: center;
+    background: #FFA500;
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    height: 25px;
+    padding: 5px;
+}
+
+.edit .edit-form {
+    display: flex;
+}

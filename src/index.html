@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Hillel home work </title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext'
+          rel='stylesheet'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<div class='wrapper-center'>
+    <header class='header'>
+        <div class='wrapper-btn-header'>
+            <button type='button' class='btn-logout'>Logout</button>
+            <button type='button' class='btn-add'>Add</button>
+
+        </div>
+        <form class='add-task-form'>
+            <input class=' new-task' id='name-new-task' type='text' placeholder='Write name'>
+            <textarea class='new-task' id='text-new-task' placeholder='Write task'></textarea>
+            <select name='select' id='select-new-task' class='select-new-task'>
+                <option value='1' selected> priority task 1</option>
+                <option value='2'>priority task 2</option>
+                <option value='3'>priority task 3</option>
+            </select>
+            <div class='add-task-form-btn'>
+                <img src='/img/orange-loader.gif' alt='load' class='load-form'>
+                <span class='error-message'>Error!</span>
+                <button class=' btn-add-task' type='submit'>Ok</button>
+                <button type='button' class='close-form'>Close</button>
+
+            </div>
+
+        </form>
+    </header>
+    <main class='main'>
+        <h1 class='main-name'>Your to do list</h1>
+        <div class='count-tasks'>
+            <span class='total'>All: </span>
+            <select name='select' id='select-task' class='select-task'>
+                <option value='0' selected>All Task</option>
+                <option value='1'> priority task 1</option>
+                <option value='2'>priority task 2</option>
+                <option value='3'>priority task 3</option>
+            </select>
+            <span class='completed'>Ready: </span>
+        </div>
+        <div class='tasks-list-wrapper'>
+            <ul class='tasks-list'>
+
+            </ul>
+        </div>
+    </main>
+</div>
+<script src='localstorage.js'></script>
+<script src='index.js'></script>
+
+</body>
+</html>
